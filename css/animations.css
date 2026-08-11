@@ -1,0 +1,553 @@
+/*====================================================
+  YOURS TECH SOLUTIONS
+  PREMIUM ANIMATIONS
+====================================================*/
+
+
+/*====================================================
+  PAGE LOAD
+====================================================*/
+
+body{
+    animation:pageFadeIn .8s ease forwards;
+}
+
+@keyframes pageFadeIn{
+
+    from{
+        opacity:0;
+    }
+
+    to{
+        opacity:1;
+    }
+
+}
+
+
+/*====================================================
+  HERO ANIMATIONS
+====================================================*/
+
+.hero-content{
+    animation:heroContentIn 1s ease .2s both;
+}
+
+.hero-image{
+    animation:heroImageIn 1.2s ease .4s both;
+}
+
+@keyframes heroContentIn{
+
+    from{
+        opacity:0;
+        transform:translateX(-60px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+
+}
+
+@keyframes heroImageIn{
+
+    from{
+        opacity:0;
+        transform:translateX(60px) scale(.9);
+    }
+
+    to{
+        opacity:1;
+        transform:translateX(0) scale(1);
+    }
+
+}
+
+
+/*====================================================
+  HERO TAG
+====================================================*/
+
+.hero-tag{
+    animation:tagPulse 3s ease-in-out infinite;
+}
+
+@keyframes tagPulse{
+
+    0%,
+    100%{
+        box-shadow:0 0 0 rgba(255,255,255,0);
+    }
+
+    50%{
+        box-shadow:0 0 25px rgba(255,255,255,.15);
+    }
+
+}
+
+
+/*====================================================
+  BUTTON SHINE
+====================================================*/
+
+.btn-primary,
+.about-btn,
+.cta-button{
+
+    position:relative;
+    overflow:hidden;
+
+}
+
+.btn-primary::before,
+.about-btn::before,
+.cta-button::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:-120%;
+
+    width:70%;
+    height:100%;
+
+    background:linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,255,255,.35),
+        transparent
+    );
+
+    transform:skewX(-20deg);
+
+    transition:.7s;
+
+}
+
+.btn-primary:hover::before,
+.about-btn:hover::before,
+.cta-button:hover::before{
+
+    left:140%;
+
+}
+
+
+/*====================================================
+  SECTION TITLE
+====================================================*/
+
+.section-title{
+
+    animation:sectionReveal .8s ease both;
+
+}
+
+@keyframes sectionReveal{
+
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+
+/*====================================================
+  SERVICE CARDS
+====================================================*/
+
+.service-card{
+
+    animation:cardAppear .7s ease both;
+
+}
+
+.service-card:nth-child(1){
+    animation-delay:.1s;
+}
+
+.service-card:nth-child(2){
+    animation-delay:.2s;
+}
+
+.service-card:nth-child(3){
+    animation-delay:.3s;
+}
+
+.service-card:nth-child(4){
+    animation-delay:.4s;
+}
+
+.service-card:nth-child(5){
+    animation-delay:.5s;
+}
+
+.service-card:nth-child(6){
+    animation-delay:.6s;
+}
+
+@keyframes cardAppear{
+
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+
+/*====================================================
+  SERVICE ICON
+====================================================*/
+
+.service-card i{
+
+    transition:
+        transform .5s ease,
+        box-shadow .5s ease;
+
+}
+
+.service-card:hover i{
+
+    box-shadow:
+        0 15px 35px rgba(37,99,235,.35);
+
+}
+
+
+/*====================================================
+  ABOUT IMAGE
+====================================================*/
+
+.about-image{
+
+    animation:aboutImageReveal .9s ease both;
+
+}
+
+@keyframes aboutImageReveal{
+
+    from{
+        opacity:0;
+        transform:translateX(-50px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+
+}
+
+
+/*====================================================
+  ABOUT CONTENT
+====================================================*/
+
+.about-content{
+
+    animation:aboutContentReveal .9s ease both;
+
+}
+
+@keyframes aboutContentReveal{
+
+    from{
+        opacity:0;
+        transform:translateX(50px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+
+}
+
+
+/*====================================================
+  FEATURE BOXES
+====================================================*/
+
+.feature{
+
+    transition:
+        transform .35s ease,
+        background .35s ease,
+        color .35s ease;
+
+}
+
+.feature:hover{
+
+    transform:translateX(8px) scale(1.02);
+
+}
+
+
+/*====================================================
+  STAT BOXES
+====================================================*/
+
+.stat-box{
+
+    transition:.4s ease;
+
+}
+
+.stat-box:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.stat-box h2{
+
+    transition:.4s ease;
+
+}
+
+.stat-box:hover h2{
+
+    transform:scale(1.08);
+
+}
+
+
+/*====================================================
+  PORTFOLIO
+====================================================*/
+
+.portfolio-card{
+
+    animation:portfolioReveal .8s ease both;
+
+}
+
+.portfolio-card:nth-child(1){
+    animation-delay:.1s;
+}
+
+.portfolio-card:nth-child(2){
+    animation-delay:.2s;
+}
+
+.portfolio-card:nth-child(3){
+    animation-delay:.3s;
+}
+
+.portfolio-card:nth-child(4){
+    animation-delay:.4s;
+}
+
+.portfolio-card:nth-child(5){
+    animation-delay:.5s;
+}
+
+@keyframes portfolioReveal{
+
+    from{
+        opacity:0;
+        transform:translateY(35px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+
+/*====================================================
+  PORTFOLIO IMAGE
+====================================================*/
+
+.portfolio-image{
+
+    transition:.5s ease;
+
+}
+
+.portfolio-card:hover .portfolio-image{
+
+    transform:scale(1.02);
+
+}
+
+
+/*====================================================
+  PORTFOLIO OVERLAY
+====================================================*/
+
+.portfolio-overlay a{
+
+    transform:scale(.5);
+
+}
+
+.portfolio-card:hover .portfolio-overlay a{
+
+    transform:scale(1);
+
+}
+
+
+/*====================================================
+  CTA
+====================================================*/
+
+.cta-content{
+
+    animation:ctaReveal 1s ease both;
+
+}
+
+@keyframes ctaReveal{
+
+    from{
+        opacity:0;
+        transform:translateY(35px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+
+/*====================================================
+  CONTACT
+====================================================*/
+
+.contact-info{
+
+    animation:contactLeft .8s ease both;
+
+}
+
+.contact-form{
+
+    animation:contactRight .8s ease both;
+
+}
+
+@keyframes contactLeft{
+
+    from{
+        opacity:0;
+        transform:translateX(-40px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+
+}
+
+@keyframes contactRight{
+
+    from{
+        opacity:0;
+        transform:translateX(40px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+
+}
+
+
+/*====================================================
+  FOOTER
+====================================================*/
+
+.footer-column ul li a{
+
+    transition:
+        color .3s ease,
+        padding-left .3s ease;
+
+}
+
+
+/*====================================================
+  SOCIAL ICONS
+====================================================*/
+
+.social-links a{
+
+    transition:
+        transform .35s ease,
+        background .35s ease;
+
+}
+
+.social-links a:hover{
+
+    transform:translateY(-6px) rotate(5deg);
+
+}
+
+
+/*====================================================
+  SCROLL TOP
+====================================================*/
+
+.scroll-top{
+
+    transition:
+        opacity .4s ease,
+        visibility .4s ease,
+        transform .4s ease,
+        box-shadow .4s ease;
+
+}
+
+.scroll-top:hover{
+
+    box-shadow:
+        0 15px 35px rgba(37,99,235,.45);
+
+}
+
+
+/*====================================================
+  REDUCED MOTION
+====================================================*/
+
+@media (prefers-reduced-motion:reduce){
+
+    *,
+    *::before,
+    *::after{
+
+        animation-duration:.01ms !important;
+        animation-iteration-count:1 !important;
+        scroll-behavior:auto !important;
+        transition-duration:.01ms !important;
+
+    }
+
+}
