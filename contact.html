@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -21,6 +22,7 @@
     <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
 </head>
 
 <body>
@@ -28,6 +30,7 @@
     <!-- ================= NAVBAR ================= -->
 
     <header>
+
         <nav class="navbar">
 
             <div class="logo">
@@ -42,6 +45,7 @@
                 </div>
 
             </div>
+
 
             <ul class="nav-links">
 
@@ -68,6 +72,7 @@
             </ul>
 
         </nav>
+
     </header>
 
 
@@ -105,7 +110,7 @@
         <div class="contact-container">
 
 
-            <!-- LEFT SIDE -->
+            <!-- ================= LEFT SIDE ================= -->
 
             <div class="contact-info">
 
@@ -179,10 +184,24 @@
 
                 </div>
 
+
+                <div class="contact-info-card">
+
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+
+                    <div>
+                        <h3>Digital Marketing</h3>
+                        <p>Social media and online growth solutions</p>
+                    </div>
+
+                </div>
+
             </div>
 
 
-            <!-- RIGHT SIDE FORM -->
+            <!-- ================= RIGHT SIDE FORM ================= -->
 
             <div class="contact-form-box">
 
@@ -199,7 +218,12 @@
                 </div>
 
 
-                <form id="projectForm">
+                <!-- ================= FORMSPREE FORM ================= -->
+
+                <form
+                    id="projectForm"
+                    action="https://formspree.io/f/mgawbjoo"
+                    method="POST">
 
 
                     <!-- NAME -->
@@ -286,7 +310,10 @@
 
                             <i class="fa-solid fa-briefcase"></i>
 
-                            <select id="service" name="service" required>
+                            <select
+                                id="service"
+                                name="service"
+                                required>
 
                                 <option value="">
                                     Select a service
@@ -339,7 +366,9 @@
 
                             <i class="fa-solid fa-indian-rupee-sign"></i>
 
-                            <select id="budget" name="budget">
+                            <select
+                                id="budget"
+                                name="budget">
 
                                 <option value="">
                                     Select your budget
@@ -423,6 +452,7 @@
 
                     </p>
 
+
                 </form>
 
             </div>
@@ -443,11 +473,19 @@
             </div>
 
             <div>
-                <h3>Yours Tech Solutions</h3>
-                <p>Transforming Ideas into Digital Solutions</p>
+
+                <h3>
+                    Yours Tech Solutions
+                </h3>
+
+                <p>
+                    Transforming Ideas into Digital Solutions
+                </p>
+
             </div>
 
         </div>
+
 
         <p>
             © 2026 Yours Tech Solutions. All Rights Reserved.
@@ -456,26 +494,15 @@
     </footer>
 
 
-    <!-- ================= FORM SCRIPT ================= -->
+    <!-- ================= JAVASCRIPT ================= -->
 
-    <script>
+    <script src="js/script.js"></script>
 
-        document.getElementById("projectForm").addEventListener("submit", function(event) {
+    <script src="js/navbar.js"></script>
 
-            event.preventDefault();
+    <script src="js/animation.js"></script>
 
-            alert(
-                "Thank you for contacting Yours Tech Solutions! We have received your project enquiry."
-            );
 
-            this.reset();
-
-        });
-
-    </script>
-<script src="js/script.js"></script>
-<script src="js/navbar.js"></script>
-<script src="js/animation.js"></script>
 </body>
 
 </html>
